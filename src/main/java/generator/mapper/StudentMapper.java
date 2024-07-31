@@ -2,6 +2,7 @@ package generator.mapper;
 
 import generator.domain.Student;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Service;
 
 /**
 * @author leniovo
@@ -10,6 +11,7 @@ import org.apache.ibatis.annotations.Mapper;
 * @Entity generator.domain.Student
 */
 @Mapper
+@Service
 public interface StudentMapper {
     Student selectByPrimaryKey(Integer id);
 }
